@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites name="vitest tests" tests="1" failures="0" errors="0" time="0.004837542">
-    <testsuite name="src/app.controller.spec.ts" timestamp="2026-04-24T01:31:52.822Z" hostname="Mac" tests="1" failures="0" errors="0" skipped="0" time="0.004837542">
-        <testcase classname="src/app.controller.spec.ts" name="AppController &gt; root &gt; should return &quot;Hello World!&quot;" time="0.004154042">
-        </testcase>
-    </testsuite>
-</testsuites>
