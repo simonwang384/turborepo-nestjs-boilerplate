@@ -60,13 +60,17 @@ catalogs:
   vite:
     '@vitejs/plugin-react': ^6.0.1
     'vite': ^8.0.0
+  playwright:
+    playwright: ^1.59.1
   postcss:
     postcss: ^8.5.8
     postcss-preset-mantine: ^1.18.0
     postcss-simple-vars: ^7.0.1
   vitest:
     '@vitest/coverage-v8': ^4.1.5
+    '@vitest/browser-playwright': ^4.1.5
     vitest: ^4.1.5
+    vitest-browser-react: ^2.2.0
 
 onlyBuiltDependencies:
   - '@nestjs/core'

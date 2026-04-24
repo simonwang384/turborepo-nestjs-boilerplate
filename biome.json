@@ -64,6 +64,16 @@
 					}
 				}
 			}
+		},
+		{
+			"includes": ["**/*.spec.ts", "**/*.test.ts", "**/file-route-utils.tsx"],
+			"linter": {
+				"rules": {
+					"suspicious": {
+						"noExplicitAny": "off"
+					}
+				}
+			}
 		}
 	]
 }

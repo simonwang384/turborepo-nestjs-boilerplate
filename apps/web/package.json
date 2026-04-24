@@ -7,7 +7,10 @@
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"test:cov": "vitest run --coverage"
 	},
 	"dependencies": {
 		"@mantine/core": "catalog:mantine",
@@ -19,15 +22,21 @@
 	},
 	"devDependencies": {
 		"@repo/typescript-config": "workspace:*",
+		"@repo/vitest-config": "workspace:*",
 		"@tanstack/react-router-devtools": "catalog:tanstack",
 		"@tanstack/router-plugin": "catalog:tanstack",
 		"@types/react": "catalog:react",
 		"@types/react-dom": "catalog:react",
 		"@vitejs/plugin-react": "catalog:vite",
+		"@vitest/browser-playwright": "catalog:vitest",
+		"@vitest/coverage-v8": "catalog:vitest",
+		"playwright": "catalog:playwright",
 		"postcss": "catalog:postcss",
 		"postcss-preset-mantine": "catalog:postcss",
 		"postcss-simple-vars": "catalog:postcss",
 		"typescript": "catalog:typescript",
-		"vite": "catalog:vite"
+		"vite": "catalog:vite",
+		"vitest": "catalog:vitest",
+		"vitest-browser-react": "catalog:vitest"
 	}
 }
