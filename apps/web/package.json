@@ -13,10 +13,14 @@
 		"@mantine/core": "catalog:mantine",
 		"@mantine/hooks": "catalog:mantine",
 		"react": "catalog:react",
-		"react-dom": "catalog:react"
+		"react-dom": "catalog:react",
+		"@tanstack/react-router": "catalog:tanstack",
+		"@tanstack/react-query": "catalog:tanstack"
 	},
 	"devDependencies": {
 		"@repo/typescript-config": "workspace:*",
+		"@tanstack/react-router-devtools": "catalog:tanstack",
+		"@tanstack/router-plugin": "catalog:tanstack",
 		"@types/react": "catalog:react",
 		"@types/react-dom": "catalog:react",
 		"@vitejs/plugin-react": "catalog:vite",
