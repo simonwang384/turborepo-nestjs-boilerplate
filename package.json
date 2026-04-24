@@ -1,0 +1,27 @@
+{
+	"name": "my-turborepo",
+	"version": "0.0.0",
+	"private": true,
+	"description": "",
+	"author": "",
+	"license": "UNLICENSED",
+	"type": "module",
+	"scripts": {
+		"dev": "turbo run dev",
+		"build": "turbo run build",
+		"clean": "turbo run clean",
+		"test": "turbo run test --continue",
+		"test:e2e": "turbo run test:e2e",
+		"check": "biome check .",
+		"check:fix": "biome check . --write"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "catalog:biome",
+		"rimraf": "catalog:rimraf",
+		"turbo": "catalog:turbo"
+	},
+	"packageManager": "pnpm@10.33.2",
+	"engines": {
+		"node": ">=22"
+	}
+}

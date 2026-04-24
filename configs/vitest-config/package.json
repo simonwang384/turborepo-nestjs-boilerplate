@@ -1,0 +1,41 @@
+{
+	"name": "@repo/vitest-config",
+	"version": "0.0.0",
+	"private": true,
+	"license": "MIT",
+	"type": "module",
+	"publishConfig": {
+		"access": "public"
+	},
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"require": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		},
+		"./base": {
+			"import": "./dist/base.js",
+			"require": "./dist/base.js",
+			"types": "./dist/base.d.ts"
+		},
+		"./nest": {
+			"import": "./dist/nest.js",
+			"require": "./dist/nest.js",
+			"types": "./dist/nest.d.ts"
+		}
+	},
+	"devDependencies": {
+		"@repo/typescript-config": "workspace:*",
+		"@swc/cli": "catalog:swc",
+		"@swc/core": "catalog:swc",
+		"typescript": "catalog:typescript",
+		"vitest": "catalog:vitest"
+	},
+	"scripts": {
+		"build:types": "tsc --emitDeclarationOnly",
+		"build:js": "swc src --strip-leading-paths -d dist",
+		"build": "pnpm build:js && pnpm build:types"
+	}
+}

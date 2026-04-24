@@ -1,0 +1,48 @@
+{
+	"name": "@repo/core",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "nest start --watch",
+		"build": "nest build",
+		"clean": "rimraf dist",
+		"start": "nest start",
+		"start:debug": "nest start --debug --watch",
+		"start:prod": "node dist/main",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"test:cov": "vitest run --coverage",
+		"test:debug": "vitest --inspect-brk --inspect --logHeapUsage --threads=false"
+	},
+	"dependencies": {
+		"@nestjs/common": "catalog:nestjs",
+		"@nestjs/core": "catalog:nestjs",
+		"@nestjs/config": "catalog:nestjs",
+		"@nestjs/platform-express": "catalog:nestjs",
+		"@nestjs/swagger": "catalog:nestjs",
+		"@nestjs/terminus": "catalog:nestjs",
+		"reflect-metadata": "catalog:nestjs",
+		"rxjs": "catalog:nestjs"
+	},
+	"devDependencies": {
+		"@repo/typescript-config": "workspace:*",
+		"@repo/vitest-config": "workspace:*",
+		"@repo/swc-config": "workspace:*",
+		"@nestjs/cli": "catalog:nestjs",
+		"@nestjs/schematics": "catalog:nestjs",
+		"@nestjs/testing": "catalog:nestjs",
+		"@swc/cli": "catalog:swc",
+		"@swc/core": "catalog:swc",
+		"@types/express": "catalog:express",
+		"@types/node": "catalog:typescript",
+		"@types/supertest": "catalog:supertest",
+		"supertest": "catalog:supertest",
+		"@vitest/coverage-v8": "catalog:vitest",
+		"source-map-support": "catalog:typescript",
+		"ts-loader": "catalog:typescript",
+		"ts-node": "catalog:typescript",
+		"typescript": "catalog:typescript",
+		"vitest": "catalog:vitest"
+	}
+}
