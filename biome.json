@@ -27,7 +27,8 @@
 	"javascript": {
 		"formatter": {
 			"quoteStyle": "single",
-			"semicolons": "asNeeded"
+			"semicolons": "asNeeded",
+			"jsxQuoteStyle": "single"
 		},
 		"parser": {
 			"unsafeParameterDecoratorsEnabled": true

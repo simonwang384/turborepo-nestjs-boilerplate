@@ -1,0 +1,29 @@
+{
+	"name": "@repo/web",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@mantine/core": "catalog:mantine",
+		"@mantine/hooks": "catalog:mantine",
+		"react": "catalog:react",
+		"react-dom": "catalog:react"
+	},
+	"devDependencies": {
+		"@repo/typescript-config": "workspace:*",
+		"@types/react": "catalog:react",
+		"@types/react-dom": "catalog:react",
+		"@vitejs/plugin-react": "catalog:vite",
+		"postcss": "catalog:postcss",
+		"postcss-preset-mantine": "catalog:postcss",
+		"postcss-simple-vars": "catalog:postcss",
+		"typescript": "catalog:typescript",
+		"vite": "catalog:vite"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"extends": "./base.json",
+	"compilerOptions": {
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"target": "ESNext",
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"allowImportingTsExtensions": true,
+		"noEmit": true,
+		"jsx": "react-jsx",
+		"declaration": false,
+		"declarationMap": false,
+		"emitDeclarationOnly": false
+	}
+}

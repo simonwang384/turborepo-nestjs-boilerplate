@@ -10,6 +10,9 @@ catalogs:
     '@biomejs/biome': ^2.4.13
   express:
     '@types/express': ^5.0.6
+  mantine:
+    '@mantine/core': ^9.1.0
+    '@mantine/hooks': ^9.1.0
   mikro-orm:
     '@mikro-orm/cli': ^6.6.7
     '@mikro-orm/core': ^6.6.7
@@ -28,6 +31,11 @@ catalogs:
     '@nestjs/testing': ^11.1.19
     reflect-metadata: ^0.2.2
     rxjs: ^7.8.2
+  react:
+    react: ^19.2.4
+    'react-dom': ^19.2.4
+    '@types/react': ^19.2.14
+    '@types/react-dom': ^19.2.3
   rimraf:
     rimraf: ^6.1.3
   supertest:
@@ -44,6 +52,13 @@ catalogs:
     ts-loader: ^9.5.7
     ts-node: ^10.9.2
     typescript: ^6.0.3
+  vite:
+    '@vitejs/plugin-react': ^6.0.1
+    'vite': ^8.0.0
+  postcss:
+    postcss: ^8.5.8
+    postcss-preset-mantine: ^1.18.0
+    postcss-simple-vars: ^7.0.1
   vitest:
     '@vitest/coverage-v8': ^4.1.5
     vitest: ^4.1.5
