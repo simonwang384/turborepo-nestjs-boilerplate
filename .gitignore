@@ -33,6 +33,7 @@ junit.xml
 out/
 build
 dist
+tsconfig.tsbuildinfo
 
 # IDEs and editors
 /.idea
