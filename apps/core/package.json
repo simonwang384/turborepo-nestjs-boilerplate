@@ -4,11 +4,9 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "nest start --watch",
-		"build": "nest build",
+		"dev": "vite",
+		"build": "vite build",
 		"clean": "rimraf dist",
-		"start": "nest start",
-		"start:debug": "nest start --debug --watch",
 		"start:prod": "node dist/main",
 		"test": "vitest run",
 		"test:watch": "vitest",
@@ -22,13 +20,13 @@
 		"@nestjs/platform-express": "catalog:nestjs",
 		"@nestjs/swagger": "catalog:nestjs",
 		"@nestjs/terminus": "catalog:nestjs",
+		"@repo/utils": "workspace:*",
 		"reflect-metadata": "catalog:nestjs",
 		"rxjs": "catalog:nestjs"
 	},
 	"devDependencies": {
 		"@repo/typescript-config": "workspace:*",
 		"@repo/vitest-config": "workspace:*",
-		"@repo/swc-config": "workspace:*",
 		"@nestjs/cli": "catalog:nestjs",
 		"@nestjs/schematics": "catalog:nestjs",
 		"@nestjs/testing": "catalog:nestjs",
@@ -43,6 +41,8 @@
 		"ts-loader": "catalog:typescript",
 		"ts-node": "catalog:typescript",
 		"typescript": "catalog:typescript",
-		"vitest": "catalog:vitest"
+		"vitest": "catalog:vitest",
+		"vite": "catalog:vite",
+		"vite-plugin-node": "catalog:vite"
 	}
 }

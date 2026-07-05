@@ -60,6 +60,7 @@ catalogs:
   vite:
     '@vitejs/plugin-react': ^6.0.1
     'vite': ^8.0.0
+    'vite-plugin-node': ^8.0.0
   playwright:
     playwright: ^1.59.1
   postcss:

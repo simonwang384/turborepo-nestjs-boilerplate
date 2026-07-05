@@ -4,12 +4,7 @@
 	"sourceRoot": "src",
 	"compilerOptions": {
 		"deleteOutDir": true,
-		"builder": {
-			"type": "swc",
-			"options": {
-				"swcrcPath": "node_modules/@repo/swc-config/.swcrc"
-			}
-		},
+		"builder": "swc",
 		"typeCheck": true
 	}
 }

@@ -4,8 +4,14 @@ import { AppModule } from './app.module.js'
 
 async function bootstrap() {
 	const app = await NestFactory.create(AppModule)
-	app.enableCors()
-	await app.listen(3000)
+
+	if (import.meta.env.PROD) {
+		await app.listen(3000)
+	} else {
+		await app.init()
+	}
+	return app
 }
 
-void bootstrap()
+// Ensure the parentheses () are present!
+export const viteNodeApp = bootstrap()
