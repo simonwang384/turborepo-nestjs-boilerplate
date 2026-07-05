@@ -4,38 +4,48 @@
 	"private": true,
 	"license": "MIT",
 	"type": "module",
-	"publishConfig": {
-		"access": "public"
-	},
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.mts",
 	"exports": {
 		".": {
-			"import": "./dist/index.js",
-			"require": "./dist/index.js",
-			"types": "./dist/index.d.ts"
+			"import": {
+				"types": "./dist/index.d.mts",
+				"default": "./dist/index.mjs"
+			},
+			"require": {
+				"types": "./dist/index.d.cts",
+				"default": "./dist/index.cjs"
+			}
 		},
 		"./base": {
-			"import": "./dist/base.js",
-			"require": "./dist/base.js",
-			"types": "./dist/base.d.ts"
+			"import": {
+				"types": "./dist/base.d.mts",
+				"default": "./dist/base.mjs"
+			},
+			"require": {
+				"types": "./dist/base.d.cts",
+				"default": "./dist/base.cjs"
+			}
 		},
 		"./nest": {
-			"import": "./dist/nest.js",
-			"require": "./dist/nest.js",
-			"types": "./dist/nest.d.ts"
+			"import": {
+				"types": "./dist/nest.d.mts",
+				"default": "./dist/nest.mjs"
+			},
+			"require": {
+				"types": "./dist/nest.d.cts",
+				"default": "./dist/nest.cjs"
+			}
 		}
 	},
 	"devDependencies": {
 		"@repo/typescript-config": "workspace:*",
-		"@swc/cli": "catalog:swc",
-		"@swc/core": "catalog:swc",
+		"tsdown": "catalog:tsdown",
 		"typescript": "catalog:typescript",
 		"vitest": "catalog:vitest"
 	},
 	"scripts": {
-		"build:types": "tsc --emitDeclarationOnly",
-		"build:js": "swc src --strip-leading-paths -d dist",
-		"build": "pnpm build:js && pnpm build:types"
+		"build": "tsdown"
 	}
 }
