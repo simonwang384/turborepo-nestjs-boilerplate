@@ -7,12 +7,12 @@ autoInstallPeers: true
 
 catalogs:
   biome:
-    '@biomejs/biome': ^2.4.13
+    '@biomejs/biome': ^2.5.2
   express:
     '@types/express': ^5.0.6
   mantine:
-    '@mantine/core': ^9.1.0
-    '@mantine/hooks': ^9.1.0
+    '@mantine/core': ^9.4.1
+    '@mantine/hooks': ^9.4.1
   mikro-orm:
     '@mikro-orm/cli': ^6.6.7
     '@mikro-orm/core': ^6.6.7
@@ -20,22 +20,28 @@ catalogs:
     '@mikro-orm/nestjs': ^6.1.1
     '@mikro-orm/postgresql': ^6.6.7
   nestjs:
-    '@nestjs/cli': ^11.0.21
-    '@nestjs/common': ^11.1.19
+    '@nestjs/cli': ^11.0.23
+    '@nestjs/common': ^11.1.27
     '@nestjs/config': ^4.0.4
-    '@nestjs/core': ^11.1.19
-    '@nestjs/platform-express': ^11.1.19
+    '@nestjs/core': ^11.1.27
+    '@nestjs/platform-express': ^11.1.27
     '@nestjs/schematics': ^11.1.0
-    '@nestjs/swagger': ^11.4.1
+    '@nestjs/swagger': ^11.4.5
     '@nestjs/terminus': ^11.1.1
-    '@nestjs/testing': ^11.1.19
+    '@nestjs/testing': ^11.1.27
     reflect-metadata: ^0.2.2
     rxjs: ^7.8.2
+  playwright:
+    playwright: ^1.61.1
+  postcss:
+    postcss: ^8.5.16
+    postcss-preset-mantine: ^1.18.0
+    postcss-simple-vars: ^7.0.1
   react:
-    react: ^19.2.4
-    'react-dom': ^19.2.4
-    '@types/react': ^19.2.14
+    '@types/react': ^19.2.17
     '@types/react-dom': ^19.2.3
+    react: ^19.2.7
+    'react-dom': ^19.2.7
   rimraf:
     rimraf: ^6.1.3
   supertest:
@@ -43,36 +49,30 @@ catalogs:
     supertest: ^7.2.2
   swc:
     '@swc/cli': ^0.8.1
-    '@swc/core': ^1.15.30
+    '@swc/core': ^1.15.43
   tanstack:
-    '@tanstack/react-router': ^1.168.23
-    '@tanstack/react-router-devtools': ^1.166.13
-    '@tanstack/router-plugin': ^1.167.23
-    '@tanstack/react-query': ^5.100.1
+    '@tanstack/react-query': ^5.101.2
+    '@tanstack/react-router': ^1.170.17
+    '@tanstack/react-router-devtools': ^1.167.0
+    '@tanstack/router-plugin': ^1.168.19
   tsdown:
     tsdown: ^0.22.3
   turbo:
-    turbo: ^2.9.6
+    turbo: ^2.10.3
   typescript:
-    '@types/node': ^25.6.0
+    '@types/node': ^26.1.0
     source-map-support: ^0.5.21
-    ts-loader: ^9.5.7
+    ts-loader: ^9.6.2
     ts-node: ^10.9.2
     typescript: ^6.0.3
   vite:
-    '@vitejs/plugin-react': ^6.0.1
-    'vite': ^8.0.0
+    '@vitejs/plugin-react': ^6.0.3
+    'vite': ^8.1.3
     'vite-plugin-node': ^8.0.0
-  playwright:
-    playwright: ^1.59.1
-  postcss:
-    postcss: ^8.5.8
-    postcss-preset-mantine: ^1.18.0
-    postcss-simple-vars: ^7.0.1
   vitest:
-    '@vitest/coverage-v8': ^4.1.5
-    '@vitest/browser-playwright': ^4.1.5
-    vitest: ^4.1.5
+    '@vitest/browser-playwright': ^4.1.9
+    '@vitest/coverage-v8': ^4.1.9
+    vitest: ^4.1.9
     vitest-browser-react: ^2.2.0
 
 onlyBuiltDependencies:
